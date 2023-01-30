@@ -1,0 +1,34 @@
+<nz-header>
+  <div class="d-flex h-100">
+    <div>
+      <div><img src="src/assets/images/logo.svg" alt="Logo" /></div>
+      <div>
+        <h1 class="company-name">Gencommerce</h1>
+      </div>
+    </div>
+
+    <div>
+      <li routerLinkActive="active">
+        <ul>
+          Home
+        </ul>
+        <ul>
+          Shop
+        </ul>
+        <ul>
+          Blog
+        </ul>
+        <ul>
+          Contact
+        </ul>
+      </li>
+    </div>
+
+    <nz-badge [nzCount]="cart.length">
+      <button nz-button nzType="default" class="m-r-1" nzShape="circle" (click)="showCartDrawer()">
+        <span nz-icon nzType="shopping-cart" nzTheme="outline"></span>
+      </button>
+    </nz-badge>
+    <nz-avatar [nzSize]="40" nzIcon="user" [nzSrc]="user.avatar"></nz-avatar>
+  </div>
+</nz-header>
